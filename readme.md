@@ -21,7 +21,7 @@
 ›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹
 
 ####### TODO list
-  — [ ] Basic structure of the project
+  — […] Basic structure of the project
   — [ ] Basic structure of the scanner
   — [ ] Advanced structure of the scanner
 
