@@ -1,9 +1,13 @@
 package main
 
 import (
-	"github.com/blackcrw/wafi/internal"
+	"runtime"
+
+	"github.com/blackcrw/wafi/cli"
 )
 
 func main() {
-	internal.SimpleBanner()
+	runtime.GOMAXPROCS(runtime.NumCPU())
+
+	cli.Execute()
 }
