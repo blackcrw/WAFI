@@ -8,37 +8,26 @@ import (
 )
 
 // IsURL :: This function will be used for URL validation
-func NetTools_URLValidate(URL string) bool {
+func URLValidate(URL string) bool {
 	defer recover_error.NetTools_URL()
 
-	uri, err := url.ParseRequestURI(URL)
+	var uri, err = url.ParseRequestURI(URL)
 
-	if err != nil {
-		panic(err)
-	}
+	if err != nil { panic(err) }
 
-	switch uri.Scheme {
-	case "http":
-	case "https":
-	default:
-		panic("Invalid scheme")
-	}
+	switch uri.Scheme { case "http":; case "https":; default: panic("URL Validade: Invalid scheme") }
 
 	return true
 }
 
 func GetHost(URL string) (string, error) {
-	uri, err := url.ParseRequestURI(URL)
+	var uri, err = url.ParseRequestURI(URL)
 
-	if err != nil {
-		return "", err
-	}
+	if err != nil { return "", err }
 
 	_, err = net.LookupHost(uri.Host)
 
-	if err != nil {
-		return "", err
-	}
+	if err != nil { return "", err }
 
 	return uri.Host, nil
 }

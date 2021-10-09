@@ -28,16 +28,16 @@ func init() {
 }
 
 func checks_lists() {
-	var target, _ = root.Flags().GetString("url")
+	var target, err = root.Flags().GetString("url")
+
+	if err != nil { log.Fatalln("OOOOOO") }
 
 	internal.SimpleBanner()
 
 	if !strings.HasSuffix(target, "/") { target = target + "/" }
-	if !nettools.NetTools_URLValidate(target) { log.Fatalln("This is URL not validate") }
+	if !nettools.URLValidate(target) { log.Fatalln("This is URL not validate") }
 }
 
 func Execute() {
-	if err := root.Execute(); err != nil {
-		os.Exit(0)
-	}
+	if err := root.Execute(); err != nil { os.Exit(0) }
 }
