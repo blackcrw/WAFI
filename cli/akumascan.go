@@ -5,16 +5,16 @@ import (
 	"os"
 	"strings"
 
-	"github.com/blackcrw/wafi/cli/cmd"
-	"github.com/blackcrw/wafi/internal"
-	"github.com/blackcrw/wafi/pkg/nettools"
+	"github.com/blackcrw/akumascan/cli/cmd"
+	"github.com/blackcrw/akumascan/internal"
+	"github.com/blackcrw/akumascan/pkg/nettools"
 	"github.com/spf13/cobra"
 )
 
 var root = &cobra.Command{
-	Use:     "wafi",
-	Short:   "WAFI",
-	Long:    internal.TextBanner() + `WAFI (Web Application Firewall / Intrusion)`,
+	Use:     "akumascan",
+	Short:   "A K U M A  S C A N",
+	Long:    internal.TextBanner() + `Akuma Scan (Web Application Firewall / Intrusion)`,
 	Run:     cmd.RootCMDRun,
 	PostRun: cmd.RootCMDPostRun,
 }
