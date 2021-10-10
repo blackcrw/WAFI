@@ -3,7 +3,7 @@ package main
 import (
 	"runtime"
 
-	"github.com/blackcrw/wafi/cli"
+	"github.com/blackcrw/akumascan/cli"
 )
 
 func main() {

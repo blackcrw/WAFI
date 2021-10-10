@@ -1,4 +1,4 @@
-module github.com/blackcrw/wafi
+module github.com/blackcrw/akumascan
 
 go 1.16
 

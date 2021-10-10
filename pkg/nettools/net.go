@@ -29,7 +29,7 @@ type Response struct {
 	Response *http.Response
 }
 
-func NewNETClient() *net_params { return &net_params{ method: "GET", user_agent: "WAFI - Advanced Web Application Firewall Scanner", tls_certificate_verify: true } }
+func NewNETClient() *net_params { return &net_params{ method: "GET", user_agent: "akumascan - Advanced Web Application Firewall Scanner", tls_certificate_verify: true } }
 
 func (this *net_params) SetURL(url string) { this.url = url }
 func (this *net_params) SetTlsCertificateVerify(crt bool) { this.tls_certificate_verify = crt }

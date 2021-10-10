@@ -1,7 +1,7 @@
 package cmd
 
 import (
-	"github.com/blackcrw/wafi/tools"
+	"github.com/blackcrw/akumascan/tools"
 	"github.com/spf13/cobra"
 )
 

@@ -4,7 +4,7 @@ import (
 	"net"
 	"net/url"
 
-	recover_error "github.com/blackcrw/wafi/pkg/recover"
+	recover_error "github.com/blackcrw/akumascan/pkg/recover"
 )
 
 // IsURL :: This function will be used for URL validation
