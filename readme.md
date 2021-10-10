@@ -49,6 +49,15 @@
 
 ›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹››‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹››‹›‹›‹
 
+####### WAF bypass techniques
+
+When you think that the target might have some waf, I'm sure you also think about how to
+perform a bypass, and that's why I recommend...
+
+• https://pentestit.medium.com/bypassing-waf-4cfa1aad16bf
+
+›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹››‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹››‹›‹›‹
+
 ####### Simple Code Compilation
 
 $ go get github.com/blackcrw/akumascan
