@@ -43,13 +43,13 @@
                                 ;   ____      ;//'     "-   `,
                                 `+   .-/                 ".\\;
                                   `*" /                    "'
-                                     — A K U M A – S C A N —
+                                     — A K U M A – S C A N —  
                                        This is WAF Scanner
                                        (Under Development)
 
 ›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹››‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹››‹›‹›‹
 
-####### WAF bypass techniques
+                                     — WAF bypass techniques —
 
 When you think that the target might have some waf, I'm sure you also think about how to
 perform a bypass, and that's why I recommend...
@@ -58,7 +58,7 @@ perform a bypass, and that's why I recommend...
 
 ›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹››‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹›‹››‹›‹›‹
 
-####### Simple Code Compilation
+                                   — Simple Code Compilation —
 
 $ go get github.com/blackcrw/akumascan
 $ cd $HOME/$your path golang$/src/github.com/blackcrw/akumascan
