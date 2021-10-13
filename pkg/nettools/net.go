@@ -1,9 +1,4 @@
-/*
-Since golang has a standard to follow, "go-staticcheck" will give some warnings due to the use of "this".
-That for a better understanding of the code, Golang developers do not recommend the use of generic names for variables/methods/structures, etc...
-
-WARN: go-staticcheck - Receiver name should be a reflection of its identity; don't use generic names such as "this" or "self" (ST1006)
-*/
+/* https://github.com/blackcrw/akumascan/projects/1#card-70646744 */
 
 package nettools
 
@@ -39,6 +34,7 @@ func (this *net_params) Runner() (*Response, error) {
 	var client = &http.Client{
 		CheckRedirect: this.redirect,
 		Transport: &http.Transport{
+			DisableKeepAlives: false,
 			TLSClientConfig: &tls.Config{
 				InsecureSkipVerify: this.tls_certificate_verify,
 			},

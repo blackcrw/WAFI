@@ -8,7 +8,9 @@ import (
 func RootCMDRun(cmd *cobra.Command, args []string) {
 	var target, _ = cmd.Flags().GetString("url")
 
-	tools.NewDetection().SetURL(target)
+	var ddd = tools.NewDetection()
+	ddd.SetURL(target)
+	ddd.RunnerPassive()
 }
 
 func RootCMDPostRun(cmd *cobra.Command, args []string) {}
